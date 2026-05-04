@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf6e3;
+  --foreground: #2d1b00;
+  --primary: #7b1c1c;
+  --secondary: #c0392b;
+  --accent: #d4a017;
+  --saffron: #e8620b;
+  --gold: #f0c040;
+  --cream: #fdf6e3;
+  --dark-text: #2d1b00;
+  --muted: #8b6f47;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    "Noto Sans Malayalam", sans-serif;
+}
+
+/* Malayalam script elements */
+.font-malayalam {
+  font-family: "Noto Serif Malayalam", "Noto Sans Malayalam", serif;
+}
+
+/* Decorative divider */
+.om-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.om-divider::before,
+.om-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--accent);
+}
+
+/* Temple-themed scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

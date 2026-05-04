@@ -1,6 +1,6 @@
 # Kunjuveedu Devi Temple
 
-Website and static assets for the **Kunchuveedu Durga Bhagavathi Temple** — a sacred abode of Goddess Durga Bhagavathi in Kerala, India.
+Website and static assets for the **Kunchuveedu Durga Bhagavathi Temple**
 
 Built with [Next.js](https://nextjs.org) (App Router), TypeScript, and Tailwind CSS.
 
@@ -32,8 +32,3 @@ npm run start    # Start production server
 npm run lint     # Run ESLint
 ```
 
-## Deploy
-
-The easiest way to deploy is via [Vercel](https://vercel.com/new). Connect the GitHub repository and Vercel will build and deploy automatically on every push.
-
-See [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
